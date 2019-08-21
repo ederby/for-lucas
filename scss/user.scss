@@ -1,0 +1,308 @@
+//
+//
+// user.scss
+//
+// Place your own custom CSS or SCSS rules below this line, these rules will override any Bootstrap and theme variables.
+
+//  $primary-2: #B5D4B7;
+//  $primary-3: #283848;
+//  $primary: #FFC04D;
+//  $ured: #FC3535;
+//  $upurple: #39202E;
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	// to fix 1px divider error on safari browser
+	width: 100%;
+	overflow-x: hidden;
+}
+
+h1,
+.display-4 {
+	font-weight: 900;
+	color: $primary-3;
+}
+h3 {
+	font-weight: 900 !important;
+	color: #fff;
+	font-size: 2.2em !important;
+}
+h6 {
+	color: #fff;
+	text-transform: uppercase;
+}
+a:hover {
+	color: $primary;
+	text-decoration: none;
+}
+.logo_name {
+	display: inline-block;
+	font-size: 1.5em;
+	margin-top: 12px;
+}
+.logo {
+	max-width: 60px;
+	float: left;
+}
+.logo-combination {
+	min-width: 60px;
+	min-height: 60px;
+}
+.menu-btn {
+	max-width: 172px;
+}
+.container {
+	z-index: 2;
+	position: relative;
+}
+
+.user-divider-one,
+.user-divider-two,
+.user-divider-three,
+.user-divider-four {
+	position: absolute;
+	width: 100%;
+	width: calc(100% + 1px);
+	// left: -1px;
+	// right: -1px;
+}
+
+.user-divider-one {
+	bottom: -1px;
+	z-index: 1;
+}
+.user-divider-two {
+	bottom: 0;
+	z-index: 0;
+}
+.user-divider-three {
+	top: -1px;
+	z-index: 1;
+}
+.user-divider-four {
+	top: 0;
+	z-index: 0;
+}
+
+.logo-size {
+	width: 50%;
+}
+.btn,
+.btn-lg,
+.btn-group-lg > .btn {
+	border-radius: 15px;
+	// color: #fff;
+	color: #283848;
+}
+.btn {
+	text-transform: uppercase;
+	font-weight: 700;
+}
+// .btn-primary:hover {
+//     color: $primary;
+//     background-color: $primary-3;
+//     border-color: $primary-3;
+// }
+// svg.bg-primary-2-1 {
+//     fill: $primary-3;
+// }
+// .bg-primary-2-2 {
+//     fill: $primary-2;
+//     opacity: 0.5;
+// }
+.using_benefits_area {
+	background-color: $primary-3;
+	color: #fff;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.section_heading {
+	position: relative;
+	z-index: 1;
+	margin-bottom: 70px;
+	.line {
+		width: 100px;
+		height: 2px;
+		background-color: #fff;
+		margin: 30px auto 0;
+	}
+}
+.using_benefits_area i {
+	color: $primary;
+}
+.single_benifits {
+	margin-bottom: 50px;
+	position: relative;
+	-webkit-transition-duration: 500ms;
+	transition-duration: 500ms;
+	z-index: 1;
+	.icon_box {
+		font-size: 3rem;
+		-webkit-transition-duration: 500ms;
+		transition-duration: 500ms;
+		margin-right: 20px;
+	}
+	h5 {
+		color: #ffffff;
+		font-weight: 700;
+	}
+}
+.benifits_text {
+	a {
+		&:hover {
+			i {
+				-webkit-animation: move_arrow 400ms linear forwards;
+				animation: move_arrow 400ms linear forwards;
+			}
+		}
+	}
+}
+@keyframes move_arrow {
+	to {
+		margin-left: 10px;
+	}
+}
+.workflow {
+	padding-top: 150px;
+	h3 {
+		color: $primary-3;
+	}
+}
+.pad_this {
+	padding-top: 150px;
+	@media screen and (max-width: 992px) {
+		padding-top: 0;
+	}
+}
+.work_process_area {
+	h3 {
+		color: $primary-3;
+	}
+	h5 {
+		color: $primary;
+		font-weight: 700;
+	}
+	.section_heading .line {
+		background-color: $primary-3;
+	}
+}
+.section_heading h3 span {
+	color: $primary;
+}
+.single_work_step {
+	position: relative;
+	z-index: 1;
+	margin-bottom: 50px;
+	text-align: center;
+}
+.work_pro_arr {
+	&:before {
+		-webkit-transition-duration: 500ms;
+		transition-duration: 500ms;
+		position: absolute;
+		content: "\eaca";
+		top: 50%;
+		right: -50%;
+		font-family: "IcoFont";
+		font-size: 60px;
+		width: 70px;
+		height: 70px;
+		margin-top: -35px;
+		margin-left: -35px;
+		z-index: 1;
+		line-height: 1;
+		color: $primary-3;
+	}
+}
+.single_work_step:hover::before,
+.single_work_step:focus::before {
+	color: $primary;
+	right: -55%;
+}
+.single_work_step .step-icon {
+	-webkit-transition-duration: 500ms;
+	transition-duration: 500ms;
+	position: relative;
+	z-index: 1;
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	margin: 0 auto 30px;
+}
+.single_work_step .step-icon i {
+	font-size: 3rem;
+	line-height: 90px;
+	color: $primary-3;
+}
+.single_work_step .step-icon::after {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	content: "";
+	border-radius: 50%;
+	border: 3px dashed $primary-3;
+	top: 0;
+	left: 0;
+}
+.single_work_step:hover .step-icon i,
+.single_work_step:focus .step-icon i {
+	color: $primary;
+}
+.single_work_step:hover .step-icon::after,
+.single_work_step:focus .step-icon::after {
+	-webkit-animation: apland-load 4000ms linear infinite;
+	animation: apland-load 4000ms linear infinite;
+	border-color: $primary;
+}
+@-webkit-keyframes apland-load {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@keyframes apland-load {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+.full_width {
+	width: 100%;
+}
+
+.show_tablet {
+	display: none;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+	.show_tablet {
+		display: inline-block;
+	}
+	.show_desktop {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.work_pro_arr {
+		&:before {
+			display: none;
+		}
+	}
+	.show_desktop,
+	.show_tablet {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.shrink-me {
+		font-size: 24px;
+	}
+}
