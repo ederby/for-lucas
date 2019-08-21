@@ -14031,6 +14031,15 @@ a:hover {
   font-size: 1.5em;
   margin-top: 12px; }
 
+.logo-text {
+  width: 100%;
+  margin-top: 16px;
+  margin-left: -10px; }
+
+.bbd-text {
+  height: 30px;
+  margin-top: 15px; }
+
 .logo {
   max-width: 60px;
   float: left; }
@@ -14245,5 +14254,9 @@ a:hover {
 @media screen and (max-width: 768px) {
   .shrink-me {
     font-size: 24px; } }
+
+footer {
+  padding-top: 0;
+  background-image: url("/assets/img/bbd-pattern.png"); }
 
 /*# sourceMappingURL=theme.css.map */
